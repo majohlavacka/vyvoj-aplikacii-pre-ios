@@ -1,0 +1,29 @@
+name: country_quiz
+description: "Hádaj krajinu – kvíz o vlajkách, hlavných mestách a polohe krajín (REST Countries API)."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  # správa stavu
+  provider: ^6.1.2
+  # volanie REST API
+  http: ^1.2.2
+  # lokálne ukladanie dát (cache krajín, história hier, meno hráča)
+  shared_preferences: ^2.3.2
+  # mapa (OpenStreetMap, bez API kľúča)
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
